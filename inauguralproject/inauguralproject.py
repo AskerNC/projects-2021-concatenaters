@@ -143,7 +143,7 @@ def ch_figures(c_vals,h_vals,m_vals,m_range=None,c_range=None,h_range=None,
                         linewidths=1.5).set_facecolor("none")
 
     # c. right plot
-        ax_right = fig.add_subplot(1,2,2)
+    ax_right = fig.add_subplot(1,2,2)
     ax_right.plot(m_vals,h_vals,c='blue',linewidth=2)
 
     ax_right.set_title('h* as function of m')
