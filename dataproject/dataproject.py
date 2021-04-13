@@ -99,8 +99,7 @@ def merge_dfs(*dfs,on,how):
             how (str):           merger method (outer, inner, left)
     """
 
-    first = True
-
+    first=True
     for df in dfs:
 
         # a. the first dataframe is saved as the full merger
@@ -111,7 +110,6 @@ def merge_dfs(*dfs,on,how):
         # b. all following dataframes are merged with full
         else:
             full = full.merge(df,on=on,how=how)
-    
     # c. display the head of the merged dataframe
     display(full.head())
 
@@ -175,7 +173,7 @@ def co_var(x, y):
         tup += ((x[i] - x.mean())*(y[i] - y.mean()),)
 
     # b. take the mean
-    cov = np.mean(tup)
+    cov = np.sum(tup)/(len(x)-1)
 
     return cov
 
@@ -190,4 +188,4 @@ def add_pct_col(df,group,col):
 
     """
 
-    df[col + '_pct'] = df.groupby(group)[col].pct_change() * 100
+    df[col + '_pct'] = df.groupby(group)[col].pct_change(fill_method=None) * 100
