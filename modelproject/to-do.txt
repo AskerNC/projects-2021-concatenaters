@@ -1,0 +1,31 @@
+# To-do list
+
+## Ideas
+- Carl-Johan Dalgaard Malthus model? Dynamisk malthusmodel
+
+
+## Coding-wise
+
+## Methods to implement
+
+## Specifics
+- Model description
+	* Add markdown explanations
+	
+- Law of motion for the labor force
+	* Can sympy rewrite this so that L_t is not in the denominator?
+	
+
+- Figure 1.
+	* New colors
+	* Function legend next to function
+	* Remove grid
+	* Remove axis values
+	* Increase axis title size
+	
+## Links
+- Numbering equations in markdown
+	* https://github.com/jupyterlab/jupyterlab/issues/4039
+
+- Malthus model
+	* https://eml.berkeley.edu/~jsteinsson/teaching/malthus.pdf
