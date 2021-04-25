@@ -4,25 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-def time_param(start, end):
-    """ returns a list of tuples for each year between start and end (both included)
-        tuple contains a string 'time' and a string of the year
-
-        Args:
-            start (int):    first year in period
-            end (int):      last year in period
-    """
-
-    # a. initializing list
-    time_param = []
-
-    # b. populating list with tuples counting down years
-    for n in range(end-start+1):        
-        year = end - n
-        time_param.append(('time',str(year)))
-    
-    return time_param
-
 def eurostat_to_df(dataset_id, params, client):
     """ imports a dataset from eurostat as a dataframe using the eurostatapiclient
         prints dataset title and displays dataframe head
@@ -157,28 +138,6 @@ def plot_gdp_pas_cap(df, geo_name):
 
     plt.show()
 
-def co_var(x, y):
-    """ returns the covariance between two pd.Series
-        
-        Args:
-            x (pd.Series):  x values
-            y (pd.Series):  y values
-
-        Returns:
-            cov (float):    covariance
-    """
-
-    tup = ()
-
-    # a. product of x and y differences from their respective means are added to a tuple
-    for i in x.index:
-        tup += ((x[i] - x.mean())*(y[i] - y.mean()),)
-
-    # b. take the mean
-    cov = np.mean(tup)
-
-    return cov
-
 def add_pct_col(df,group,col):
     """ from a column already in the dataframe the function adds
         a percentual growth column within a group
@@ -190,4 +149,4 @@ def add_pct_col(df,group,col):
 
     """
 
-    df[col + '_pct'] = df.groupby(group)[col].pct_change() * 100
+    df[col + '_pct'] = df.groupby(group)[col].pct_change(fill_method=None) * 100 # fill method sets NaN, when no previous year data
