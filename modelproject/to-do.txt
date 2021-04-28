@@ -1,14 +1,7 @@
-# To-do list
-
-## Ideas
-- Carl-Johan Dalgaard Malthus model? Dynamisk malthusmodel
-
-
-## Coding-wise
-
-## Methods to implement
-
 ## Specifics
+- Intro notes
+	* ✓ Github numbers all equations, please open the notebook in jupyter to get correct equation numbering.
+
 - Model description
 	* ✓ Add markdown explanations
 	* ✓ Eta is expected to be large in societies where there is a particular cultural valuation of having many children and/or where cost of child rearing are modest.
@@ -16,27 +9,39 @@
 - Law of motion for the labor force
 	* ✓ Can sympy rewrite this so that L_t is not in the denominator?
 	
-- Algorithm notation
-	* how it is written in the lecture?
+- Algorithm
+	* Notation: how it is written in the lecture?
+	* STEP4: Can we move AX outside paranthesis, like later on?
 	
 - Possible extensions of model
 	* ✓ Growing techonology (A)
-	* Death rate dependant on income
+	* ✕ Death rate dependant on income
 	* ✓ What about long run living standards?
+	* Kig på numerical income pr cap?
+	
+- Extended model
+	* ✓ Implement numerical solution
+	
+- Declaring symbols
+	* Remove assumptions not needed
+	
+- Conclusion
+	* Something about Malthus not predicting the industrial revolution.
+	* What actually needs to change in model for contious growth in income, not population.
 
 - Readability:
-	* Some kind of separation between declaring symbols and equations and performing the actual algorithm
+	* ✓ Some kind of separation between declaring symbols and equations and performing the actual algorithm
 
 - Graphic and Parameterization
-	* Remove "higher A" from initial graphic, it will be tested by the interactive widget
-	* Interactive widget function in .py
+	* ✓ Remove "higher A" from initial graphic, it will be tested by the interactive widget
+	* ✓ Interactive widget function in .py
 	* Rækkefølge af args i lom_func og ss_func burde være ens, skal ændres gennem hele funktionen
 
 - Figure 1.
 	* New colors (perhaps defined with imports and set magics)
 	* Function legend next to function
-	* Remove grid
-	* Remove axis values
+	* ✕ Remove grid
+	* ✕ Remove axis values
 	* Increase axis title size
 	
 ## Links
