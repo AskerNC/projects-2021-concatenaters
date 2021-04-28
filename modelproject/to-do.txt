@@ -10,14 +10,30 @@
 
 ## Specifics
 - Model description
-	* Add markdown explanations
+	* ✓ Add markdown explanations
+	* ✓ Eta is expected to be large in societies where there is a particular cultural valuation of having many children and/or where cost of child rearing are modest.
 	
 - Law of motion for the labor force
-	* Can sympy rewrite this so that L_t is not in the denominator?
+	* ✓ Can sympy rewrite this so that L_t is not in the denominator?
 	
+- Algorithm notation
+	* how it is written in the lecture?
+	
+- Possible extensions of model
+	* ✓ Growing techonology (A)
+	* Death rate dependant on income
+	* ✓ What about long run living standards?
+
+- Readability:
+	* Some kind of separation between declaring symbols and equations and performing the actual algorithm
+
+- Graphic and Parameterization
+	* Remove "higher A" from initial graphic, it will be tested by the interactive widget
+	* Interactive widget function in .py
+	* Rækkefølge af args i lom_func og ss_func burde være ens, skal ændres gennem hele funktionen
 
 - Figure 1.
-	* New colors
+	* New colors (perhaps defined with imports and set magics)
 	* Function legend next to function
 	* Remove grid
 	* Remove axis values
