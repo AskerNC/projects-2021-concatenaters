@@ -10,20 +10,20 @@
 	* ✓ Can sympy rewrite this so that L_t is not in the denominator?
 	
 - Algorithm
-	* Notation: how it is written in the lecture?
-	* STEP4: Can we move AX outside paranthesis, like later on?
+	* ✓ Notation: how it is written in the lecture?
+	* ✓ STEP4: Can we move AX outside paranthesis, like later on?
 	
 - Possible extensions of model
 	* ✓ Growing techonology (A)
 	* ✕ Death rate dependant on income
 	* ✓ What about long run living standards?
-	* Kig på numerical income pr cap?
+	* ✕ Kig på numerical income pr cap?
 	
 - Extended model
 	* ✓ Implement numerical solution
 	
 - Declaring symbols
-	* Remove assumptions not needed
+	* ✓ Remove assumptions not needed
 	
 - Conclusion
 	* Something about Malthus not predicting the industrial revolution.
@@ -35,14 +35,15 @@
 - Graphic and Parameterization
 	* ✓ Remove "higher A" from initial graphic, it will be tested by the interactive widget
 	* ✓ Interactive widget function in .py
-	* Rækkefølge af args i lom_func og ss_func burde være ens, skal ændres gennem hele funktionen
+	* ✓ Rækkefølge af args i lom_func og ss_func burde være ens, skal ændres gennem hele funktionen
 
 - Figure 1.
-	* New colors (perhaps defined with imports and set magics)
-	* Function legend next to function
+	* ✓ New colors (perhaps defined with imports and set magics)
+	* ✓ Function legend next to function
 	* ✕ Remove grid
 	* ✕ Remove axis values
-	* Increase axis title size
+	* ✓ Increase axis title size
+	* ✓ Conclusion on figure should be checked
 	
 ## Links
 - Numbering equations in markdown
@@ -50,3 +51,4 @@
 
 - Malthus model
 	* https://eml.berkeley.edu/~jsteinsson/teaching/malthus.pdf
+	* http://rossbach.georgetown.domains/teaching/spring2016/eco330/notes/external/Williamson_Malthus_Slides.pdf
